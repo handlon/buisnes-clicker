@@ -1,0 +1,19 @@
+.main{
+    display: flex;
+}
+header{
+    background-color: black;
+    color: white;
+}
+
+#baller{
+
+}
+#clikupgrade{
+    background-color: black;
+    color: white;
+}
+#autockicker{
+    background-color: black;
+    color: white;
+}
