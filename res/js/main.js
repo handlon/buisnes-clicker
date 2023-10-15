@@ -5,9 +5,9 @@ const clickUpgradeCostDisplay = document.getElementById("displaycostclickupgrade
 const autoUpgradeCostDisplay= document.getElementById("displaycostautoupgrade");
 const clickUpgradeLvl=document.getElementById("clickupgradelvl");
 const autoUpgradeLvl=document.getElementById("autoupgradelvl");
-const barakUpgradeLvl=document.getElementById("barakupgradelvl"); //need dodelat
-const barak= document.getElementById("buisness")//need dodelat
-const barakCostDisplay=document.getElementById("displaycostbarak")//need dodelat
+const barakUpgradeLvl=document.getElementById("barakupgradelvl"); 
+const barak= document.getElementById("buisness");
+const barakCostDisplay=document.getElementById("displaycostbarak");
 
 
 let pocet=document.getElementById("pocet");
@@ -19,8 +19,8 @@ let bruhinterval;
 let autockickerIncrease = 0;
 let clickUpgradeLvlCounter = 0;
 let autoUpgradeLvlCounter = 0;
-let barakUpgradeLvlCounter = 0; //need dodelat
-let barakCost = 5000;//need dodelat
+let barakUpgradeLvlCounter = 0;
+let barakCost = 5000;
 
 
 
@@ -31,7 +31,7 @@ baller.onclick = () => {
     pocetPenez += pocetPenezZaClick;
     pocet.innerHTML=" " + pocetPenez;
     console.log(pocetPenez);
-   
+    
 }
 
 function cheats(){
