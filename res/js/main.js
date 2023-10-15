@@ -142,7 +142,7 @@ function barakzmena() {
     } else {
         barakobr.src = "./res/img/megaultra.jpg";
     }
-    console.log("jso koot")
+     
 }
 
 
