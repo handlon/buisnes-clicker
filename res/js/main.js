@@ -8,6 +8,7 @@ const autoUpgradeLvl=document.getElementById("autoupgradelvl");
 const barakUpgradeLvl=document.getElementById("barakupgradelvl"); 
 const barak= document.getElementById("buisness");
 const barakCostDisplay=document.getElementById("displaycostbarak");
+const barakobr = document.getElementById("barak")
 
 
 let pocet=document.getElementById("pocet");
@@ -24,14 +25,35 @@ let barakCost = 5000;
 
 
 
-
+function personality() {
+    if (pocetPenez >= 2000) {
+        baller.src = "res/img/kokot.png";
+        }
+    if (pocetPenez >= 6000){
+        baller.src = "res/img/normal.png"
+    }
+    if (pocetPenez >= 10000){
+        baller.src = "res/img/wealthy.png"
+    }
+    if (pocetPenez >= 15000){
+        baller.src = "res/img/more wealthy.png"
+    }
+    if (pocetPenez >= 20000){
+        baller.src = "res/img/L.jpg"
+    }
+    if (pocetPenez < 2000){
+        baller.src = "res/img/bezdomovec.png"
+    }
+}
 
 
 baller.onclick = () => {
     pocetPenez += pocetPenezZaClick;
     pocet.innerHTML=" " + pocetPenez;
     console.log(pocetPenez);
-    
+    personality();
+
+
 }
 
 function cheats(){
@@ -39,6 +61,7 @@ function cheats(){
     pocetPenez += 500
     pocet.innerHTML=" " + pocetPenez;
     console.log(pocetPenez);
+    personality();
 }
 
 clickUpgrade.onclick = () => {
@@ -52,7 +75,8 @@ clickUpgrade.onclick = () => {
         pocet.innerHTML="" + pocetPenez;
         console.log(pocetPenez);
         clickUpgradeCostDisplay.innerHTML="click upgrade cost: " + clickUpgradeCost;
-
+        personality();
+    
     }
 
 }
@@ -71,7 +95,10 @@ autoClicker.onclick = () => {
         bruhinterval = setInterval(() => {
             pocetPenez += autockickerIncrease;
             pocet.innerHTML=" " + pocetPenez;
+            personality();
+        
         },1000);
+        
 
     }
 }
@@ -85,14 +112,37 @@ barak.onclick = () => {
         barakUpgradeLvlCounter +=1;
         barakUpgradeLvl.innerHTML="lvl: "+ barakUpgradeLvlCounter;
         pocet.innerHTML=" " + pocetPenez;
+        if(barakUpgradeLvlCounter>3){
+            barakUpgradeLvl.innerHTML="lvl: max platis zbytecne"
+        }
+        personality();
+        barakzmena();
+      
     
     }
 }
 
 function cheats2(){
-    pocetPenez += 5000;
+    pocetPenez += 57000;
     pocet.innerHTML=" " + pocetPenez;
     console.log(pocetPenez);
+    personality();
+
+}
+
+function barakzmena() {
+    if (barakUpgradeLvlCounter == 0) {
+        barakobr.src = "./res/img/podmostem.png";
+    } else if (barakUpgradeLvlCounter == 1) {
+        barakobr.src = "./res/img/normalhouse.jpg";
+    } else if (barakUpgradeLvlCounter == 2) {
+        barakobr.src = "./res/img/nicehouse.jpg";
+    } else if (barakUpgradeLvlCounter == 3) {
+        barakobr.src = "./res/img/megaultra.jpg";
+    } else {
+        barakobr.src = "./res/img/megaultra.jpg";
+    }
+    console.log("jso koot")
 }
 
 
