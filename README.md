@@ -1,2 +1,2 @@
 # buisnes-clicker
-[mackej co nejrychleji muzes](https://github.com/handlon/buisnes-clicker.git)
+[mackej co nejrychleji muzes](https://handlon.github.io/buisnes-clicker/)
