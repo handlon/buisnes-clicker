@@ -27,7 +27,7 @@ let barakCost = 5000;
 
 function personality() {
     if (pocetPenez >= 2000) {
-        baller.src = "res/img/kokot.png";
+        baller.src = "res/img/kokot.jpg";
         }
     if (pocetPenez >= 6000){
         baller.src = "res/img/normal.png"
