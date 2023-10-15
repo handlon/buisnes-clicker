@@ -1,33 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>buisness clicker</title>
     <link rel="stylesheet" href="./res/css/css.css">
 </head>
+
 <body>
-    <header><div>
-        <h1>pocet penez :<span id="pocet"> 0 </span></h1>
-    </div></header>
+
     <div class="main">
-        <div>
-            <img id="baller" src="/res/img/bezdomovec.png" alt="">
-            
+
+
+
+        <div class="counter">
+            <h1>pocet penez :<span id="pocet"> 0 </span></h1>
         </div>
-        <div>
-            <div class="big">
-                <div id="clikupgrade"><p id="displaycostclickupgrade">click upgrade cost: 100</p></div>
-                <div id="autockicker"><p>autoclicker upgrade cost: 500 </div>
+
+        <div class="retarder">
+            <div class="ballerbox">
+                <h2 class="h2">na me klikej</h2>
+                <img id="baller" src="/res/img/bezdomovec.png" alt="">
+
             </div>
-            <div class="dik">
-                <div id="buisness"><p>barak upbrade cost:</p></div>
+            <div class="druhejbox">
+                <div class="big">
+                    <div id="clikupgrade">
+                        <p id="displaycostclickupgrade">click upgrade cost: 100</p>
+                        <p id="clickupgradelvl">lvl: 0</p>
+                    </div>
+                    <div id="autockicker">
+                        <p id="displaycostautoupgrade">autoclicker upgrade cost: 500</p>
+                        <p id="autoupgradelvl">lvl: 0</p>
+                    </div>
+                </div>
+                <div class="dik">
+                    <div id="buisness">
+                        <p id="displaycostbarak">barak upbrade cost: 5000</p>
+                        <p id="barakupgradelvl">lvl: 0</p>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="tretibox">
+                <h1 class="baraknad">tvuj barak:</h1>
+                <div id="barakbox"> <img id="barak" src="./res/img/podmostem.png" alt="misto"></div>
             </div>
         </div>
-            
-            
-        </div>
+
+
+    </div>
+
     </div>
     <script src="./res/js/main.js"></script>
 </body>
+
 </html>
