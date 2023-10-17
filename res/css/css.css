@@ -1,6 +1,6 @@
 @font-face {
     font-family: dollar;
-    src: url(/res/css/Dollar\ Bill.ttf);
+    src: url(./res/css/Dollar Bill.ttf);
 }
 body{
     background-image: url("background.jfif");
